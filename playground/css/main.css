@@ -48,12 +48,20 @@ ul.topnav {
 .button4 {background-color: #e7e7e7; color: black;} /* Gray */
 .button5 {background-color: #555555;} /* Black */
 
+.logoMain img{
+  width:200px;
+  padding:20px 0;
+}
   .mainContent {
       padding:20px;
   }
 
   .mainColors .color {
     text-align:center;display:inline-block;
+  }
+  .dotWrapper {
+    display: inline-block;
+    padding:20px;
   }
   .colorDot {
     height: 125px;
@@ -66,11 +74,11 @@ ul.topnav {
   .primary {background-color: #008cb3;}
   .primaryDark {background-color: #006cb3;}
   .primaryLight {}
-  .secondary {}
-  .secondaryDark {}
-  .secondaryLight {}
-  .accent {}
+  .secondary {background-color:#e83e8c;}
+  .secondaryDark {background-color:#8a2554;}
+  .secondaryLight {background-color:#f778b3;}
+  .accent {background-color: #3BAFDA;}
   .accentDark {}
   .accentLight {}
   .focus {}
-  .disabled {} 
+  .disabled {background-color:#6e6d6e;} 
