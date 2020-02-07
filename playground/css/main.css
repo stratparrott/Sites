@@ -82,3 +82,37 @@ ul.topnav {
   .accentLight {}
   .focus {}
   .disabled {background-color:#6e6d6e;} 
+
+.content-body .magic-block-callout.type-success {
+   background-color: #f3f8f3;
+   border-color: #50af51;
+}
+
+.content-body .magic-block-callout {
+  margin-left: 31px;
+  border-left: 4px solid #fa533d;
+  padding: 13px 13px 13px 23px;
+  position: relative;
+  margin-bottom: 13px;
+}
+.content-body .magic-block-callout .fa.fa-check-square {
+  color: #50af51;
+}
+.content-body .magic-block-callout .fa {
+  pointer-events: none;
+  font-size: 18px;
+  opacity: .3;
+  -ms-filter: "alpha(opacity=30)";
+  filter: alpha(opacity=30);
+  margin-right: 6px;
+  position: relative;
+  top: 1px;}
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0,0);
+}
