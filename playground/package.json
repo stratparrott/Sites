@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "babel-loader": "^8.0.6"
   },
   "devDependencies": {
