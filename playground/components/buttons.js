@@ -1,9 +1,11 @@
-export default { title: 'Button' };
+// src/components/Task.js
 
-export const withText = () => '<button class="btn">Hello World</button>';
+import React from 'react';
 
-export const withEmoji = () => {
-  const button = document.createElement('button');
-  button.innerText = '😀 😎 👍 💯';
-  return button;
-};
+export default function Task({ task: { id, title, state }, onArchiveTask, onPinTask }) {
+  return (
+    <div className="list-item">
+      <input type="text" value={title} readOnly={true} />
+    </div>
+  );
+}
