@@ -17,33 +17,40 @@
 <div id="mySidenav" class="sidenav">
   <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
   <a href="#typography">Typography</a>
+
   <a href="#colors">Colors</a>
+    <ul>
+      <li>
+        <a href="#gradient">Gradients</a>
+      </li>
+    </ul>
   <a href="#alerts">Alerts</a>
   <a href="#buttons">Buttons</a>
 </div>
 
       <div class="mainContent" id="main">
         <div class="logoMain"><img src="./images/Juncture2019-02.png" /></div>
-        <h1 name="sectionHeader"><a name="typography"></a>Typography</h1>
+        <h1 class="sectionHeader"><a name="typography"></a>Typography</h1>
             <!-- Standard Headings -->
-<h1>Heading</h1> 50rem
-<h2>Heading</h2> 42rem
-<h3>Heading</h3> 36rem
-<h4>Heading</h4> 30rem
-<h5>Heading</h5> 24rem
-<h6>Heading</h6> 15rem
+<h1>Heading</h1> 2.5rem
+<h2>Heading</h2> 2rem
+<h3>Heading</h3> 1.75rem
+<h4>Heading</h4> 1.5rem
+<h5>Heading</h5> 1.25rem
+<h6>Heading</h6> 1rem
 
 <!-- Base type size -->
-<p>The base type is 15px over 1.6 line height (24px)</p>
+<div><p>The base type is 15px over 1.5 line height (24px)</p></div>
 
 <!-- Other styled text tags -->
 <strong>Bolded</strong>
 <em>Italicized</em>
-<a>Colored</a>
+<a href="*">Colored</a>
 <u>Underlined</u>
+
       <div class="mainColors">
         <div>
-          <h1><a name="colors"></a>Colors</h1>
+          <h1 class="sectionHeader"><a name="colors"></a>Colors</h1>
 <ul>
   <li>basic colors (primary, accent, text, icon, divider,shadow)</li>
   <li>auxiliary colors (disabled, warning, danger, success, info, black, white, gray...)</li>
@@ -111,29 +118,132 @@
               <div class="">AA</div>
             </div>
           </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot warning"></div>
+            <div>
+              <strong>Warning</strong>
+              <div class="text-secondary">Warning or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot danger"></div>
+            <div>
+              <strong>Danger</strong>
+              <div class="text-secondary">Danger or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot error"></div>
+            <div>
+              <strong>Error</strong>
+              <div class="text-secondary">Error or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot info"></div>
+            <div>
+              <strong>Info</strong>
+              <div class="text-secondary">Info or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot bgWarning"></div>
+            <div>
+              <strong>bgWarning</strong>
+              <div class="text-secondary">bgWarning or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot bgDanger"></div>
+            <div>
+              <strong>bgDanger</strong>
+              <div class="text-secondary">bgDanger or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot bgError"></div>
+            <div>
+              <strong>bgError</strong>
+              <div class="text-secondary">bgError or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
+
+          <div class="dotWrapper">
+            <div class="colorDot bgInfo"></div>
+            <div>
+              <strong>bgInfo</strong>
+              <div class="text-secondary">bgInfo or Value</div>
+              <div class="">AA</div>
+            </div>
+          </div>
            
         </div>
-        <h1><a name="alerts"></a>Alerts</h1>
-        <div class="magic-block-callout type-success ">
-          <h3><i title="Success" class="fa fa-check-square"></i>Success! Notice
-          </h3>
-          <div class="callout-body"><p>Sample success notice prompt.</p>
-          </div>
-        </div>
 
-        <div role="alert" class="docs-alert bg-warning0"><div class="alert alert-box bg-warning3"><i class="fas fa-exclamation-triangle"></i></div>
-            <div class="alert-text"><h2>Alert! Box</h2> 
-              <p>Since you're managing all of the downloaded files yourself, make sure the references in your pages' <code>&lt;head&gt;</code> are accurate with where you've moved all of the correct files in your project.</p> 
-            </div>
-        </div>
-        
-        <div role="info" class="docs-info"><div class="info-box"><i class="info fas fa-file-download"></i></div>
-        <div class="info-text"><h2>Information Download Box</h2> 
-          <p>Get more information about the thing you clicked on with this info download box</p> 
-        </div>
+<section name="Alerts">
+  <h1 class="sectionHeader"><a name="alerts"></a>Alerts</h1>
+   
+  <div class="magic-block-callout type-success ">
+      <h3><i title="Success" class="fa fa-check-square"></i>Success! Notice</h3>
+        <div class="callout-body"><p>Sample success notice prompt.</p></div>
     </div>
 
-<h1><a name="buttons"></a>Button Colors</h1>
+  <div role="success" class="alert bgSuccess">
+    <div class="box success"><i title="Success" class="fa fa-check-square"></i></div>
+      <div class="text"><h2>Info Box</h2> 
+        <p>Get more information about the thing you clicked on with this info download box</p> 
+      </div>
+  </div>
+  
+  <div role="info" class="alert bgInfo">
+    <div class="box info"><i class="info fas fa-file-download"></i></div>
+      <div class="text"><h2>Info Box</h2> 
+        <p>Get more information about the thing you clicked on with this info download box</p> 
+      </div>
+  </div>
+  
+  <div role="warning" class="docs-alert bgWarning"><div class=" alert-box warning"><i class="fas fa-exclamation-triangle"></i></div>
+  <div class="text"><h2>Warning! Box</h2> 
+  <p>Since you're managing all of the downloaded files yourself, make sure the references in your pages' <code>&lt;head&gt;</code> are accurate with where you've moved all of the correct files in your project.</p> 
+  </div>
+  </div>
+
+  <div role="error" class="alert bgError"><div class="box error"><i class="fas fa-exclamation"></i></div>
+  <div class="text"><h2>Error! Box</h2> 
+  <p>This is a warning alert box used for <strong>VERY</strong> important notices that shouldn't be ignored!</p> 
+  </div>
+  </div>
+</section>
+
+      
+        <section>
+          <a name="gradient"></a>
+          <h1 class="sectionHeader">Gradients</h1>
+          <div class="gradient gradient1">background: rgb(0,140,179);
+            background: linear-gradient(90deg, rgba(0,140,179,1) 0%, rgba(0,179,140,1) 100%);</div>
+          <div class="gradient gradient2">background: rgb(34,193,195);
+            background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);</div>
+        </section>
+
+      
+
+    </div>
+
+
+<h1 class="sectionHeader"><a name="buttons"></a>Button Colors</h1>
 <p>Change the background color of a button with the background-color property:</p>
 
 <button class="button">Green</button>
