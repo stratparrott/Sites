@@ -7,28 +7,43 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
     <link rel="stylesheet" href="./css/main.css">
-
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     
     <title>Hello, world!</title> 
   </head>
   <body>
-    <ul class="topnav">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="right"><a href="#about">About</a></li>
-      </ul>
-      <div class="mainContent">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<div id="mySidenav" class="sidenav">
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+  <a href="#typography">Typography</a>
+  <a href="#colors">Colors</a>
+  <a href="#alerts">Alerts</a>
+  <a href="#buttons">Buttons</a>
+</div>
+
+      <div class="mainContent" id="main">
         <div class="logoMain"><img src="./images/Juncture2019-02.png" /></div>
-    <h1>H1 Hello, world!</h1> <code><h1>Hello, world!</h1></code>
-        <h2>H2 Hello, world!</h2> <code><h2>Hello, world!</h2></code>
-            <h3>H3 Hello, world!</h3> <code><h3>Hello, world!</h3></code>
+        <h1 name="sectionHeader"><a name="typography"></a>Typography</h1>
+            <!-- Standard Headings -->
+<h1>Heading</h1> 50rem
+<h2>Heading</h2> 42rem
+<h3>Heading</h3> 36rem
+<h4>Heading</h4> 30rem
+<h5>Heading</h5> 24rem
+<h6>Heading</h6> 15rem
+
+<!-- Base type size -->
+<p>The base type is 15px over 1.6 line height (24px)</p>
+
+<!-- Other styled text tags -->
+<strong>Bolded</strong>
+<em>Italicized</em>
+<a>Colored</a>
+<u>Underlined</u>
       <div class="mainColors">
         <div>
-          <h1>Colors</h1>
+          <h1><a name="colors"></a>Colors</h1>
 <ul>
   <li>basic colors (primary, accent, text, icon, divider,shadow)</li>
   <li>auxiliary colors (disabled, warning, danger, success, info, black, white, gray...)</li>
@@ -38,8 +53,8 @@
             <div class="colorDot primary"></div>
             <div>
               <strong>primary</strong>
-              <div class="text-secondary">Color Name or Value</div>
-              <div class="">AA</div>
+              <div class="text-secondary">Bondi Blue <br/>#008CB3</div>
+              <div class=""><a href='https://www.htmlcsscolor.com/hex/008CB3'>htmlcsscolor.com <i class="fas fa-external-link-alt"></i></a></div>
             </div>
           </div>
           
@@ -47,7 +62,7 @@
             <div class="colorDot primaryDark"></div>
             <div>
               <strong>primaryDark</strong>
-              <div class="text-secondary"> Value</div>
+              <div class="text-secondary">Nordic<br/>#002E3A</div>
               <div class="">AA</div>
             </div>
           </div>
@@ -56,17 +71,17 @@
             <div class="colorDot primaryLight"></div>
             <div>
               <strong>primaryLight</strong>
-              <div class="text-secondary">primaryLight or Value</div>
+              <div class="text-secondary">Pattens Blue<br/>#DDF0F5</div>
               <div class="">AA</div>
             </div>
           </div>
 
           <div class="dotWrapper">
-            <div class="colorDot primary"></div>
+            <div class="colorDot accent"></div>
             <div>
               <strong>Accent</strong>
-              <div class="text-secondary">Value</div>
-              <div class="">AA</div>
+              <div class="text-secondary">Persian Green<br/>#00B38C</div>
+              <div class=""><a href="https://www.htmlcsscolor.com/hex/00B38C">htmlcsscolor.com <i class="fas fa-external-link-alt"></i></a></div>
             </div>
           </div>
           <div style="clear:both;"></div>
@@ -98,7 +113,7 @@
           </div>
            
         </div>
-
+        <h1><a name="alerts"></a>Alerts</h1>
         <div class="magic-block-callout type-success ">
           <h3><i title="Success" class="fa fa-check-square"></i>Success! Notice
           </h3>
@@ -118,7 +133,7 @@
         </div>
     </div>
 
-<h2>Button Colors</h2>
+<h1><a name="buttons"></a>Button Colors</h1>
 <p>Change the background color of a button with the background-color property:</p>
 
 <button class="button">Green</button>
@@ -134,5 +149,16 @@
       <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
     <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <!-- <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script>-->
   </body>
 </html>

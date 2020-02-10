@@ -20,6 +20,76 @@ body {
     margin:0;
 }
 
+.sectionHeader {padding:20px; text-decoration-line: underline;}
+
+#main {margin-left:250px;}
+
+pre {
+  font-family: monospace;
+  background-color: #fff;
+  width: em(440);
+  margin: 4em auto;
+  padding: 0.5em;
+  border-radius: .25em;
+  box-shadow: .1em .1em .5em rgba(0,0,0,.45);
+  line-height: 0;
+  counter-reset: line;
+  
+span {
+    display: block;
+    line-height: 1.5rem;
+    
+    &:before {
+      counter-increment: line;
+      content: counter(line);
+      display: inline-block;
+      border-right: 1px solid #ddd;
+      padding: 0 .5em;
+      margin-right: .5em;
+      color: #888
+    }
+  }
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 ul.topnav {
     list-style-type: none;
@@ -80,6 +150,7 @@ ul.topnav {
   .dotWrapper {
     display: inline-block;
     padding:20px;
+    text-align:center;
   }
   .colorDot {
     height: 125px;
@@ -87,17 +158,18 @@ ul.topnav {
     background-color: #f0f0f0;
     border-radius: 50%;
     display: inline-block;
+
   }
 
   .primary {background-color: #008cb3;}
-  .primaryDark {background-color: #006cb3;}
-  .primaryLight {}
+  .primaryDark {background-color: #002E3A;}
+  .primaryLight {background-color: #DDF0F5;}
   .secondary {background-color:#e83e8c;}
   .secondaryDark {background-color:#8a2554;}
   .secondaryLight {background-color:#f778b3;}
-  .accent {background-color: #3BAFDA;}
-  .accentDark {}
-  .accentLight {}
+  .accent {background-color: #00B38C;}
+  .accentDark {background-color: #003A2E;}
+  .accentLight {background-color: #DDF5F0;}
   .focus {}
   .disabled {background-color:#6e6d6e;} 
 
@@ -145,6 +217,10 @@ ul.topnav {
 }
 .magic-block-callout.type-success h3 {
   color: #50af51;
+}
+
+i.fa-external-link-alt {
+  font-size:10px;
 }
 
 i {
