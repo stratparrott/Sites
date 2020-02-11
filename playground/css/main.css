@@ -1,6 +1,7 @@
 body {
-  font-family: proxima nova,proxima-nova,-apple-system,BlinkMacSystemFont,Segoe UI,open sans,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    font-family: proxima nova,proxima-nova,-apple-system,BlinkMacSystemFont,Segoe UI,open sans,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     font-size: 15px;
+    line-height: 1.5rem;
     color: #4c555a;
     margin: 0;
     display: -webkit-box;
@@ -19,13 +20,18 @@ body {
     background-color: #fff;
     margin:0;
 }
-section {margin:20px 0px;}
 
-.sectionHeader {font-size:2.5rem; padding:20px 0px; text-decoration-line: underline;font-weight: bold;}
+.post-setion.content-box.frame{background-color: #fae16c;padding: 30px;
+  margin: 20px 0px;width:75%;}
+  .name {color:#fab005;}
+
+  section {margin:20px 0px;}
+
+.sectionHeader {font-size:2.5rem; padding:20px 0px; text-decoration-line: underline;font-weight: bold;font-variant: petite-caps;}
 
 #main {margin-left:300px;}
 
-#mySidenav ul li {list-style: none;font-size: 1.25rem;}
+#mySidenav ul li {list-style: none;font-size: 1rem;}
 
 .sidenav {
   height: 100%;
@@ -34,17 +40,17 @@ section {margin:20px 0px;}
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #008CBA;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  font-size: 25px;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  color: #002E3A;
   display: block;
   transition: 0.3s;
 }
@@ -61,39 +67,6 @@ section {margin:20px 0px;}
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  ul.topnav li {float: left;}
-  
-  ul.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  ul.topnav li a:hover:not(.active) {background-color: #111;}
-  
-  ul.topnav li a.active {background-color: #008cb3;}
-  
-  ul.topnav li.right {float: right;}
-  
-  @media screen and (max-width: 600px) {
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-  }
 
 .button {
     background-color: #4CAF50; /* Green */
@@ -111,10 +84,17 @@ ul.topnav {
 .button4 {background-color: #e7e7e7; color: black;} /* Gray */
 .button5 {background-color: #555555;} /* Black */
 
+.logoMain {width: 210px;display: inline-block;}
+
 .logoMain img{
   width:200px;
   padding:20px 0;
 }
+
+.logoBlue {fill:#008AB3;}
+.logoWhite {fill:#ffffff;}
+.logoBlack {fill:#1f1f1f;}
+
   .mainContent {
       padding:20px;
   }
@@ -179,11 +159,11 @@ ul.topnav {
 .fa.fa-skull-crossbones {
   font-size: x-large;
 }
-
-i.fa-external-link-alt {
+.fa.fa-angle-down {font-size:xx-xx-small;}
+.fa.fa-external-link-alt {
   font-size:10px;
 }
-i.fa-exclamation {
+.fa.fa-exclamation {
   font-size: x-large;
   color:#F5DDE4;
 }
@@ -202,8 +182,10 @@ i {
 .success {background-color: #50af51;color:#d6f5d6;padding: 1.25em;}
 .warning { background-color: #fab005;color:#fff9db;margin-bottom:0;}
 .danger { background-color: #B30032;color:#f5dde4;}
-.info { background-color: #74c0fc;color:#e7f5ff;}
+.info { background-color: #008CB3;color:#e7f5ff;}
 .error { background-color: #E85628;color:#fbe5df;}
+
+.dark {background-color:#1f2a2e;}
 
 .bgSuccess {background-color:#d6f5d6;}
 .bgWarning { background-color: #fff9db;}
@@ -223,7 +205,7 @@ i {
 .gradient3 { background: rgb(116,192,252);
   background: linear-gradient(90deg, rgba(116,192,252,1) 0%, rgba(0,140,179,1) 100%);}
 .gradient4 { background: rgb(0,140,179);
-  background: linear-gradient(90deg, rgba(0,140,179,1) 0%, rgba(0,179,140,1) 100%);}
+  background: linear-gradient(90deg, rgba(0,140,179,1) 0%, rgba(138,37,84,1) 100%);}
 .gradient5 {background: rgb(232,86,40);
   background: linear-gradient(90deg, rgba(232,86,40,1) 0%, rgba(179,0,50,1) 100%);}
 .gradient6 { background: rgb(179,0,50);
