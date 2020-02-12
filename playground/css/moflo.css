@@ -1,0 +1,71 @@
+section {padding: 20px;}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.buttonHeader {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width:32%;
+}
+.tab{background-color: #2378AE;}
+.tab:active {border-bottom: 3px solid #F9CB0C;}
+.tab:hover {border-bottom: 3px solid #F9CB0C ;}
+
+.balanceFloatdash {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 1px lightgrey;
+  padding: 20px;
+  display: inline-block;
+}
+
+.balanceCurrent {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+.balanceCurrency {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.dailyFloat {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color:#1B9274;
+}
+.dailyCurrency {
+  text-align: center;
+  color:#1B9274;
+  font-size: 2rem;
+}
+
+.dashboad {float:left;padding: 20px;}
+.dashboard button {width:100%;}
+.controls {display:inline-block;color:#fff;width:100%;}
+
+.Blue1 {background-color:#1B4792;}
+.Blue2 {background-color:#2378AE;}
+.Red1 {background-color: #EE3C23;}
+.Red2 {background-color: #F05B42;}
+.Green1 {background-color: #1B9274;}
+.Green2 {background-color: #23AE7B;}
+
+.right {float:right;padding: 20px;}
+.left {float:left;padding: 20px;}
+
+div span span a {color:#ffffff;text-decoration:none;}
+button a{color:#ffffff;text-decoration:none;}
