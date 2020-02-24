@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6 {font-family: 'Lato', sans-serif;}
 
 .post-setion.content-box.frame{background-color: #fae16c;padding: 30px;
   margin: 20px 0px;width:75%;}
-  
+
   .name {color:#fab005;}
 
   section {margin:20px 0px;}
@@ -261,8 +261,42 @@ i {
   display: inline-block;
   width: -webkit-fill-available;}
 
-.box {padding: 20px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.box {padding: 20px;}
 
+.box {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+ 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.box:hover::after {
+    opacity: 1;
+}
 /* Test Area*/
 
 .tab{background-color: #2378AE;}
