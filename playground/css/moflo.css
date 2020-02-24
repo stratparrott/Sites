@@ -102,11 +102,11 @@ body {
   margin:20px 20px 20px 0px;
 }
 
-.title {  display:inline-block;padding:20px;}
-.type {  display:inline-block;padding:20px;}
-.creditDebit {  display:inline-block;padding:20px;}
+.title {  display:inline-block;padding:20px 10px 0px 20px}
+.type {  display:inline-block;padding:10px;}
+.creditDebit {  display:inline-block;padding:10px;}
 .amount {  display:inline-block;padding:20px;}
-.status {  display:inline-block;padding:20px;}
+.status {  display:inline-block;padding:5px; font-style: italic;font-size: small;}
 
 .dashboad {float:left;padding: 20px;-webkit-border-bottom-right-radius: 15px;
   -webkit-border-bottom-left-radius: 15px;
