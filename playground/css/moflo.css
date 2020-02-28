@@ -3,6 +3,15 @@ body {
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
 
 }
+
+h1 {}
+h2 {}
+h3 {color:rgb(35,120,174);}
+
+.logo {width:150px;margin:0 Auto;padding-top:20px;}
+
+
+
 .button {
   border: none;
   color: white;
@@ -27,6 +36,8 @@ body {
 .tab:active {border-bottom: 3px solid #F9CB0C;}
 .tab:hover {border-bottom: 3px solid #F9CB0C ;}
 
+
+
 .balanceFloatdash {
   border-radius: 10px;
   padding: 20px;
@@ -35,7 +46,6 @@ body {
 }
 
 .balanceCurrent {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   text-align: center;
 }
@@ -43,10 +53,10 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: bolder;
+  clear:left;
 }
 
 .dailyFloat {
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   text-align: center;
   color:#1B9274;
@@ -83,13 +93,15 @@ body {
 }
 
 .box:hover {
-  -webkit-transform: scale(1.15, 1.15);
-  transform: scale(1.15, 1.15);
+ /* -webkit-transform: scale(1.15, 1.15);*/
+  /*transform: scale(1.15, 1.15);*/
 }
 
 .box:hover::after {
     opacity: 1;
 }
+
+#infoBlock {margin-top: 20px;}
 
 .information {
   background: rgb(255,255,255);
@@ -98,15 +110,25 @@ body {
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: block;
-  width: 90%;
-  margin:20px 20px 20px 0px;
+  width: 80%;
+  margin: 10px 20px 10px 0px;
 }
 
-.title {  display:inline-block;padding:20px 10px 0px 20px}
-.type {  display:inline-block;padding:10px;}
-.creditDebit {  display:inline-block;padding:10px;}
-.amount {  display:inline-block;padding:20px;}
-.status {  display:inline-block;padding:5px; font-style: italic;font-size: small;}
+.date { font-weight: bold;
+  display: inline-block;
+  padding: 10px 10px 0px 0px;
+  float: left;
+  display: inline-block;
+  width: 20px;
+  margin-left: 20px;
+  line-height: 1em;
+  width:10%;}
+
+.title {  display:inline-block;padding: 20px 10px 0px 0px;width:50%;}
+.type {  display:inline-block;padding:10px;font-size: small;width:10%;}
+.creditDebit {  display:inline-block;padding:10px;font-size: small;width:10%;}
+.amount {  display:inline-block;padding:20px;width:10%;}
+.status {  display:inline-block;padding:5px; font-style: italic;font-size: small;width:10%;}
 
 .dashboad {float:left;padding: 20px;-webkit-border-bottom-right-radius: 15px;
   -webkit-border-bottom-left-radius: 15px;
@@ -145,7 +167,6 @@ button a{color:#ffffff;text-decoration:none;}
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
-  margin-left: 20px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -206,18 +227,60 @@ button a{color:#ffffff;text-decoration:none;}
     background:white;
     border:1px solid #F9CB0C;
 }
+.footerNav {
+  background-color:#282828;
+    height:90%;/* Full-height: remove this if you want "auto" height */
+    width: 80px; /* Set the width of the sidebar */
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottomright: 15px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    bottom: 0; /* Stay at the top */
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 40px 22px;
+    margin-bottom:20px;
+    transition: width 0.5s; /* BYO prefixes */
+    display: grid;
+    justify-content: space-between;
+}
 
-.footerNav {background:#333333;
+.fas {color:#D9D9D9; transition: 0.3s;}
+.fas:hover {color:rgb(35,120,174);transition: 0.5;}
+
+/* mobile styles */
+@media only screen and (max-width: 500px) {
+  .footerNav {
   -webkit-border-top-left-radius: 15px;
   -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
   -moz-border-radius-topleft: 15px;
   -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 0px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  min-height: 65px;
-  padding: 20px;
-  margin: 0 20px 0 20px;
-  width:96%;
-  position:fixed;
+  max-height: 65px;
+  padding: 20px 40px;
+  margin: 0px 15px 0 15px;
+  z-index: 1; /* Stay on top */
   bottom:0;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .information {
+      width: 98%;
+    }
+  .date {font-size:.75em;width:10%;} 
+  .title {font-size:.75em;width:50%;} 
+  .type {display:none;}
+  .creditDebit {display:none;}
+  .amount {font-size:.75em;width:10%;}
+  .status {display:none;font-size:.75em;width:10%;}
+  
 }
