@@ -139,6 +139,20 @@ body {
 
 div span span a {color:#ffffff;text-decoration:none;}
 button a{color:#ffffff;text-decoration:none;}
+ /* The container */
+ .container {
+  display: initial;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 /* Hide the browser's default radio button */
 .container input {
@@ -184,12 +198,12 @@ button a{color:#ffffff;text-decoration:none;}
 
 /* Style the indicator (dot/circle) */
 .container .checkmark:after {
- 	top: 8px;
-	left: 8px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background:white;
+     top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background:white;
     border:1px solid #F9CB0C;
 }
 
