@@ -1,3 +1,6 @@
 {
-    "markdown.styles": ["/css/main.css"]
+    "markdown.styles": [
+      "/css/main.css"
+    ],
+    "git.ignoreLimitWarning": true
   }
