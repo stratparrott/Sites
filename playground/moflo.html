@@ -4,68 +4,107 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/moflo.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+<!-- Google Font CSS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<!-- moflo general CSS -->    
+    <link rel="stylesheet" href="./moflo/css/moflo.css">
+<!-- normalize CSS -->
+    <link rel="stylesheet" href="./moflo/css/normalize.css">
+<!-- Font Awesome CSS -->   
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+   
     <title>Hello, world!</title> 
   </head>
   <body>
 <section>
-  <h2>moflo</h2>
-    <div class="balanceFloatdash box">
-      <div style="text-align: center;">
-      <div style="display: inline-block;">
-        <div class="balanceCurrent">Current Balance</div>
-        <div class="balanceCurrency">$0,000</div>
-    </div>
-<div style="border-left:1px solid lightgrey;display: inline-block;margin: 0px 20px;">&nbsp;</div>
-    <div style="display: inline-block;">
-      <div class="dailyFloat">Daily Float</div>
-      <div class="dailyCurrency">$0,000</div>
-    </div>
-    </div>
+  <div class="logo">
+    <img class="logo" src="images/moflo-logo.png"/>
+</div>
 </section>
-
-<section>
-<div class="dashboard Blue1" style="text-align:right;color:#fff;padding-right:5px;min-width:350px;">carrier info</div>
-<div class="Blue2" style="min-width:350px;">
-    <span class="controls">
-      <span class="left"><a href="*"><i class="fas fa-bars"></i></a></span>
-      <span class="left title"><h2>Dashboard</h2></span>
-      <span class="right"><a href="*"><i class="fa fa-search"></i></a></span>
-      <span class="right"><a href="*"><i class="fa fa-ellipsis-v"></i></a></span>
-    </span>
-    <button class="buttonHeader tab"><a href="*">Item 1</a></button>
-    <button class="buttonHeader tab"><a href="*">Item 2</a></button>
-    <button class="buttonHeader tab"><a href="*">Item 3</a></button>
+<section><!--Section for organization do not include-->
+  <div style="margin:50px;background:whitesmoke;padding:20px;">
+    <h1>Design System Components</h1>
   </div>
 </section>
-<section>
-  <div class="information">
-    <label class="container">
-        <input type="radio" checked="checked" name="radio">
-        <span class="checkmark"></span>
-      </label>
-     <div class="title"><h4>Title Name</h4></div><div class="type">Direct Deposit</div><div class="creditDebit">Income</div> <div class="amount">$ 350</div><div class="status">Pending</div>
-</div>
-<div class="information">
-    <label class="container">
-        <input type="radio" name="radio">
-        <span class="checkmark"></span>
-      </label><div class="title"><h4>Title Name</h4></div><div class="type">Direct Deposit</div><div class="creditDebit">Income</div> <div class="amount">$ 350</div><div class="status">Cleared</div>
-</div>
+
+<section><!--Section for organization do not include-->
+  <section style="text-align:center;">
+    <div class="balanceFloatdash box">
+          <div id="float">
+              <div class="dailyFloat">Daily Float</div>
+              <div class="dailyCurrency">$0,000</div>
+          </div>
+
+      <div id="balance">
+        <div class="balanceCurrent">Current Balance</div>
+        <div class="balanceCurrency">$0,000</div>
+      </div>
+  
+    </div>
+  </section>
 </section>
-<section>
-  <div class="dashboard Red1" style="text-align:right;color:#fff;padding-right:5px;min-width:350px;">carrier info</div>
-<section style="margin:50px;">
-  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="stratparrott" data-slug-hash="MWwmxQo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Fintec ledger item">
+<!--CODEPEN for organization do not include-->
+<section name="CODEPEN" style="margin:50px;">
+  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="stratparrott" data-slug-hash="MWwmxQo" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Fintec Dashboard">
     <span>See the Pen <a href="https://codepen.io/stratparrott/pen/MWwmxQo">
-    Fintec ledger item</a> by Strat Parrott (<a href="https://codepen.io/stratparrott">@stratparrott</a>)
+    Fintec Dashboard</a> by Strat Parrott (<a href="https://codepen.io/stratparrott">@stratparrott</a>)
     on <a href="https://codepen.io">CodePen</a>.</span>
   </p>
   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 </section>
+<!--CODEPEN for organization do not include-->
+<hr />
+<section><!--Section for organization do not include-->
+  <p style="margin:50px;background:whitesmoke;padding:20px;">
+    Notes:
+  </p>
+  <label class="container">
+    <input type="radio" checked="checked" name="radio">
+    <span class="checkmark"></span>
+  </label>
+
+<label class="container">
+    <input type="radio" name="radio">
+    <span class="checkmark"></span>
+  </label>
+</section>
+<!--CODEPEN for organization do not include-->
+<section name="CODEPEN" style="margin:50px;">
+  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="stratparrott" data-slug-hash="VwLWymZ" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Radio Checked Unchecked">
+    <span>See the Pen <a href="https://codepen.io/stratparrott/pen/VwLWymZ">
+    Radio Checked Unchecked</a> by Strat Parrott (<a href="https://codepen.io/stratparrott">@stratparrott</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+  
+</section>
+<!--CODEPEN for organization do not include-->
+<hr />
+
+<section> <!--Section for organization do not include-->
+  <p style="margin:50px;background:whitesmoke;padding:20px;">
+    Notes:
+    I am still working on these to make them better aligned without tables, hoever it is tabular data so I might change back.
+    @media is included. This doesnt have styling for browsers > 500px < 1200px
+  </p>
+  <div class="information">
+    <div class="date">FEB 28</div>
+    <label class="container">
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+     <div class="title">LEON - I STREET WASHINGTON</div><div class="type">Direct Deposit</div><div class="creditDebit">Credit</div> <div class="amount credit">$350</div>
+</div>
+</section>
+<!--CODEPEN for organization do not include-->
+<section name="CODEPEN" style="margin:50px;">
+  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="stratparrott" data-slug-hash="bGdRaVB" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="FinTech pending ledger">
+    <span>See the Pen <a href="https://codepen.io/stratparrott/pen/bGdRaVB">
+    FinTech pending ledger</a> by Strat Parrott (<a href="https://codepen.io/stratparrott">@stratparrott</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</section>
+<!--CODEPEN for organization do not include-->
 </body>
 </html>
