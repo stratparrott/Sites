@@ -5,7 +5,10 @@ body {
   font-family: 'Montserrat';
 }
 #wrapper { background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%); }
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%); margin-top: -70px;
+  margin-right: 8px;
+  border-radius: 0px 15px 0px 0px;
+  padding: 20px 0; }
 
 h1 {}
 h2 {}
@@ -102,7 +105,7 @@ h3 {color:rgb(35,120,174);}
   
 }
 
-#infoBlock {margin-top: 20px;}
+#infoBlock {margin-top: 70px;clear:both;}
 
 .information {
   background: rgb(255,255,255);
