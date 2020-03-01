@@ -1,8 +1,11 @@
-body {
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
-
+html {background: rgb(35,120,174);
+  background: linear-gradient(90deg, rgba(35,120,174,1) 0%, rgba(27,71,146,1) 100%);
 }
+body {
+  font-family: 'Montserrat';
+}
+#wrapper { background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%); }
 
 h1 {}
 h2 {}
@@ -120,9 +123,9 @@ h3 {color:rgb(35,120,174);}
   width: 20px;
   margin-left: 20px;
   line-height: 1em;
-  width:10%;}
+  width:7%;}
 
-.title {  display:inline-block;padding: 20px 10px 0px 0px;width:50%;}
+.title {  display:inline-block;padding: 20px 10px 0px 0px;width:45%;}
 .type {  display:inline-block;padding:10px;font-size: small;width:10%;}
 .creditDebit {  display:inline-block;padding:10px;font-size: small;width:10%;}
 .amount {  display:inline-block;padding:20px;width:10%;}
@@ -227,8 +230,8 @@ button a{color:#ffffff;text-decoration:none;}
 }
 .footerNav {
   background-color:#282828;
-    height:90%;/* Full-height: remove this if you want "auto" height */
-    width: 80px; /* Set the width of the sidebar */
+    height:82%;/* Full-height: remove this if you want "auto" height */
+    width: 40px; /* Set the width of the sidebar */
     -webkit-border-top-left-radius: 15px;
     -webkit-border-bottom-left-radius: 15px;
     -moz-border-radius-topleft: 15px;
@@ -261,12 +264,12 @@ button a{color:#ffffff;text-decoration:none;}
   -moz-border-radius-bottomright: 0px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  max-height: 65px;
+  max-height: 25px;
   padding: 20px 40px;
   margin: 0px 15px 0 15px;
   z-index: 1; /* Stay on top */
   bottom:0;
-  width: 92%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   }
@@ -274,7 +277,7 @@ button a{color:#ffffff;text-decoration:none;}
   .information {
       width: 98%;
     }
-  .date {font-size:.75em;width:10%;} 
+  .date {font-size:.75em;width:7%;} 
   .title {font-size:.75em;width:50%;} 
   .type {display:none;}
   .creditDebit {display:none;}
