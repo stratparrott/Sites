@@ -10,8 +10,8 @@ body {
   border-radius: 0px 15px 0px 0px;
   padding: 20px 0; }
 
-h1 {}
-h2 {}
+h1 {color:rgb(35,120,174);}
+h2 {color:rgb(35,120,174);}
 h3 {color:rgb(35,120,174);}
 
 .logo {width:150px;margin:0 Auto;padding-top:20px;}
