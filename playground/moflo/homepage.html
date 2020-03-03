@@ -14,7 +14,137 @@
 <!-- Font Awesome CSS -->   
     <link rel="stylesheet" href="../fontawesome-free-5.12.1-web/css/all.css">
     
-
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+          position: relative;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          background-color: white;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          margin-left: -3px;
+        }
+        
+        /* Container around content */
+        .timelineContainer {
+          padding: 10px 40px;
+          position: relative;
+          background-color: inherit;
+          width: 50%;
+        }
+        
+        /* The circles on the timeline */
+        .timelineContainer::after {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          right: -17px;
+          background-color: white;
+          border: 4px solid #FF9F55;
+          top: 15px;
+          border-radius: 50%;
+          z-index: 1;
+        }
+        
+        /* Place the container to the left */
+        .left {
+          left: 0;
+        }
+        
+        /* Place the container to the right */
+        .right {
+          left: 50%;
+        }
+        
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          right: 30px;
+          border: medium solid white;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent white;
+        }
+        
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          left: 30px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+        
+        /* Fix the circle for containers on the right side */
+        .right::after {
+          left: -16px;
+        }
+        
+        /* The actual content */
+        .content {
+          padding: 20px 30px;
+          background-color: white;
+          position: relative;
+          border-radius: 6px;
+        }
+        
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+          /* Place the timelime to the left */
+          .timeline::after {
+          left: 31px;
+          }
+          
+          /* Full-width containers */
+          .timelineContainer {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+          }
+          
+          /* Make sure that all arrows are pointing leftwards */
+          .timelineContainer::before {
+          left: 60px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+          }
+        
+          /* Make sure all circles are at the same spot */
+          .left::after, .right::after {
+          left: 15px;
+          }
+          
+          /* Make all right containers behave like the left ones */
+          .right {
+          left: 0%;
+          }
+        }
+        </style>
     <title>Hello, world!</title> 
   </head>
   <body>
@@ -25,33 +155,62 @@
         <img class="logo" src="images/moflo-logo.png"/>
     </div>
     <p style="text-align:center;color:#fff;">A new way of managing your finances using the power of machine learning.</p>
-<img style="float:left;width:300px;"src="images/mofloapp-demo-01.png" />
-</section>
-<section style="text-align:center;">
-    <div class="box" style="padding:20px;">
-        <div id="mc_embed_signup_scroll"><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display: none;"></div><div class="response" id="mce-success-response" style="display: none;"></div></div><div style="position: absolute; left: -5000px;"><input type="text" name="b_41ea7a2b760a0800ff4ccbc0f_d8075cc43b" tabindex="-1" value=""></div><div><div class="getnotified" style="color:cadetblue; font-size: 1.3em;">Enter your email address here</div><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" value="" style="width: 320px; height: 2em; margin-bottom: 5px;"></div><input type="submit" name="subscribe" id="mc-embedded-subscribe" value="GET NOTIFIED" style="background-color: orange; height: 35px; width: 145px; margin: unset;"></div>
-        <p style="text-align:center;">moflo is currently in development.<br/>
-        Sign up for first access to be notified when moflo launches.</p>
-      </div>
-   
-    </div>
+<img style="margin-left: 150px;
+float: left;
+width: 240px;"src="images/mofloapp-demo-01.png" />
 </section>
 
+
 <section id="wrapper" style="margin-top:20px;">
+<div class="box" style="padding:20px;text-align: center;">
+    <div id="mc_embed_signup_scroll"><div id="mce-responses" class="clear"><div class="response" id="mce-error-response" style="display: none;"></div><div class="response" id="mce-success-response" style="display: none;"></div></div><div style="position: absolute; left: -5000px;"><input type="text" name="b_41ea7a2b760a0800ff4ccbc0f_d8075cc43b" tabindex="-1" value=""></div><div><div class="getnotified" style="color:cadetblue; font-size: 1.3em;">Enter your email address here</div><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" value="" style="width: 320px; height: 2em; margin-bottom: 5px;"></div><input type="submit" name="subscribe" id="mc-embedded-subscribe" value="GET NOTIFIED" style="background-color: orange; height: 35px; width: 145px; margin: unset;"></div>
+    <p style="text-align:center;">moflo is currently in development.<br/>
+    Sign up for first access to be notified when moflo launches.</p>
+  </div>
+</div>
 <div style="margin:0px 20px;line-height: 1.5em;">
     <h1>KNOW YOUR FLOW</h1>
     <p>moflo analyzes your income and expenses, predicts your future financial health, shows detailed spending patterns, and gives you the information you need to take control of your finances.</p>
-   
-    <h2>How can I stop overdrafting my checking account?</h2>
-    <p>By learning your income and expense patterns, moflo knows if you’re in danger of overdrafting your account and sends you alerts so you can stop getting hit with overdraft fees and keep more of your hard-earned money.</p>
-
-    <h2>Can I afford an item I want?</h2>
-    <p>Checking your account balance doesn’t answer the question. You still have to calculate upcoming bills. moflo knows your upcoming bills and does the math for you.</p>
-
-    <h2>Where did my money go?</h2>
-    <p>Budget Apps put expenses into broad categories that aren’t very helpful.  moflo groups your expenses into detailed categories that make it more obvious where your money really goes. Or will go.</p>
 </div>
 </section>
+
+<section>
+    <div class="timeline">
+        <div class="timelineContainer right">
+          <div class="content">
+            <h2>How can I stop overdrafting my checking account?</h2>
+            <p>By learning your income and expense patterns, moflo knows if you’re in danger of overdrafting your account and sends you alerts so you can stop getting hit with overdraft fees and keep more of your hard-earned money.</p>        
+        </div>
+        </div>
+        <div class="timelineContainer left">
+          <div class="content">
+            <h2>How can I stop overdrafting my checking account?</h2>
+            <p>By learning your income and expense patterns, moflo knows if you’re in danger of overdrafting your account and sends you alerts so you can stop getting hit with overdraft fees and keep more of your hard-earned money.</p>        
+        </div>
+        </div>
+        <div class="timelineContainer right">
+          <div class="content">
+            <h2>How can I stop overdrafting my checking account?</h2>
+            <p>By learning your income and expense patterns, moflo knows if you’re in danger of overdrafting your account and sends you alerts so you can stop getting hit with overdraft fees and keep more of your hard-earned money.</p>               </div>
+        </div>
+        <div class="timelineContainer left">
+          <div class="content">
+            <h2>Can I afford an item I want?</h2>
+            <p>Checking your account balance doesn’t answer the question. You still have to calculate upcoming bills. moflo knows your upcoming bills and does the math for you.</p>
+          </div>
+        </div>
+        <div class="timelineContainer right">
+          <div class="content">
+            <h2>Where did my money go?</h2>
+            <p>Budget Apps put expenses into broad categories that aren’t very helpful.  moflo groups your expenses into detailed categories that make it more obvious where your money really goes. Or will go.</p>
+          </div>
+        </div>
+        
+      </div>
+</section>
+<footer>
+&copy; 2020 moflo, inc.
+</footer>
 </body>
 
 </html>

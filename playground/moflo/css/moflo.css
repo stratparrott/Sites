@@ -6,8 +6,7 @@ body {
 }
 #wrapper { background: rgb(255,255,255);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%); margin-top: -70px;
-  margin-right: 8px;
-  border-radius: 0px 15px 0px 0px;
+
   padding: 20px 0; }
 
 h1 {color:rgb(35,120,174);}
@@ -158,8 +157,7 @@ h3 {color:rgb(35,120,174);}
 .cleared {background-color: #1B9274;}
 .Green2 {background-color: #23AE7B;}
 
-.right {float:right;padding: 20px;}
-.left {float:left;padding: 20px;}
+
 
 div span span a {color:#ffffff;text-decoration:none;}
 button a{color:#ffffff;text-decoration:none;}
@@ -229,6 +227,10 @@ button a{color:#ffffff;text-decoration:none;}
     background:white;
     border:1px solid #F9CB0C;
 }
+
+footer {  background-color:#282828;overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 40px 22px;color:#fff;}
+
 .footerNav {
   background-color:#282828;
     height:82%;/* Full-height: remove this if you want "auto" height */
