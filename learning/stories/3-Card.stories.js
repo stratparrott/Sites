@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/moflo.css'; // Tell webpack that x uses these styles
+// Tell webpack that x uses these styles
 
 export default { title: 'Card', };
 
 export const Card = () =>
     <section className="card">
-        <div className="information">
+        <div className="cardInformation">
             <div className="balance">
                 <div className="title">Float</div>
                 <div className="amount">$0,000</div>
@@ -23,7 +23,7 @@ export const Card = () =>
 
 export const CardSuccess = () =>
     <section className="card">
-        <div className="information">
+        <div className="cardInformation">
             <div className="balance">
                 <div className="title success">Float</div>
                 <div className="amount success">$0,000</div>
@@ -41,7 +41,7 @@ export const CardSuccess = () =>
 
 export const CardError = () =>
     <section className="card">
-        <div className="information">
+        <div className="cardInformation">
             <div className="balance">
                 <div className="title">Float</div>
                 <div className="amount">$0,000</div>
