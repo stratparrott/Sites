@@ -1,0 +1,84 @@
+html {background: rgb(35,120,174);
+  background: linear-gradient(90deg, rgba(35,120,174,1) 0%, rgba(27,71,146,1) 100%);
+}
+body {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+ul li {list-style:none;margin:10px 0px;}
+
+#wrapper { background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%);
+  padding: 20px;
+  width:80%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 15px 15px 0px;
+}
+
+h1 {color:rgb(35,120,174);}
+h2 {color:rgb(35,120,174);}
+h3 {color:rgb(35,120,174);}
+
+.mainColors .color {
+  text-align:center;display:inline-block;
+}
+.dotWrapper {
+  display: inline-block;
+  padding:20px;
+  text-align:center;
+}
+.colorDot {
+  height: 125px;
+  width: 125px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: inline-block;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .5);
+  border:2px solid rgba(0, 0, 0, .15);
+}
+
+.primary {background-color: #008cb3;}
+.primaryDark {background-color: #002E3A;}
+.primaryLight {background-color: #DDF0F5;}
+.secondary {background-color:#e83e8c;}
+.secondaryDark {background-color:#8a2554;}
+.secondaryLight {background-color:#f778b3;}
+.accent {background-color: #00B38C;}
+.accentDark {background-color: #003A2E;}
+.accentLight {background-color: #DDF5F0;}
+.focus {}
+.disabled {background-color:#6e6d6e;} 
+.primaryText {background-color:#1F1F1F; color:#1F1F1F;}
+.secondaryText {background-color: #757575;color:#757575;}
+.lightGrayText {background-color: #969696;color:#969696;}
+
+.card {
+  position: relative;
+  display: inline-block;
+  background: rgb(255,255,255);
+  box-shadow: 0 2px 10px rgb(43, 43, 43);
+  border-radius: 15px;
+  text-align:center;
+}
+.information {
+  padding:20px;
+}
+.balance {
+  font-size: 2em;
+  line-height: 1.25em;
+  margin: 10px;}
+.title {}
+.amount {}
+.date {font-size: .5em;font-weight:100;}
+
+.success {color:rgb(27, 146, 116);}
+.error {color:rgb(179, 0, 50);}
+.alert {color:rgb(250, 176, 5);}
+.info {color:rgb(35,120,174);}
+
+
+
